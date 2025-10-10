@@ -1,0 +1,84 @@
+/* Reset some default browser spacing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+  }
+  
+  /* Navbar */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 4rem;
+  }
+  
+  .logo {
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+  
+  .navbar ul {
+    display: flex;
+    list-style: none;
+  }
+  
+  .navbar li {
+    margin-left: 2rem;
+  }
+  
+  .navbar a {
+    text-decoration: none;
+    color: #ccc;
+    transition: color 0.3s;
+  }
+  
+  .navbar a.active,
+  .navbar a:hover {
+    color: #fff;
+  }
+  
+  /* Hero section */
+  .hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5rem 4rem;
+    background-color: #000;
+  }
+  
+  .hero-text h2 {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+  
+  .hero-text h1 {
+    font-size: 4rem;
+    font-weight: 800;
+  }
+  
+  .hero-image img {
+    width: 350px;
+    border-radius: 30px;
+  }
+  
+  /* Footer (name & title section) */
+  .footer {
+    background-color: #6b5e4f;
+    padding: 2rem 4rem;
+  }
+  
+  .footer h3 {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  .footer p {
+    font-size: 1.2rem;
+  }
