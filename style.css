@@ -103,3 +103,82 @@ body {
 .footer p {
     font-size: 1.3rem;
 }
+
+/*
+The About page
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navdiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+body {
+    /*background-color: #121212; /* Dark, easy on eyes */
+    color: #e0e0e0; /* Off-white is better than pure white */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6; /* Crucial for readability */
+}
+
+
+.About_info {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:large;
+}
+/* 1. Constraint: Stop the wall of text */
+.container {
+    max-width: 800px;/* Limits line length */
+    margin: 60px auto; /* Centers the container */
+    padding: 0 20px;
+}
+.lead {
+    font-size: 1.25rem;
+    color: #a0a0a0;
+    margin-bottom: 2rem;
+}
+p {
+    margin-bottom: 1.5rem;
+}
+hr {
+    border: 0;
+    height: 1px;
+    background: #333;
+    margin: 3rem 0;
+}
+.skills-container {
+    display: grid;
+    /*This creates a responsive grid automatically */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+    gap: 2rem;
+}
+.skill-box {
+    background: #1e1e1e;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border: 1px solid #333;
+}
+/* Making the skills look like "chips" or tags */
+.tag-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.tag-list li {
+    background: #333;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 0.9rem;
+}
+.closing {
+    margin-top: 4rem;
+    text-align: center;
+    color: #888;
+}
+
