@@ -421,3 +421,120 @@ hr {
     color: burlywood;
     font-size: 1.1rem;
 }
+
+
+/* --- Hero Section Styles --- */
+
+.hero-section {
+    display: flex;
+    flex-direction: column-reverse; /* Stacks text under the image on phones */
+    align-items: center;
+    justify-content: center;
+    min-height: 85vh;
+    padding: 2rem 5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 4rem;
+}
+
+/* Switches to side-by-side layout on larger screens */
+@media (min-width: 768px) {
+    .hero-section {
+        flex-direction: row; 
+        justify-content: space-between;
+    }
+}
+
+.hero-content {
+    flex: 1;
+    max-width: 600px;
+}
+
+.greeting {
+    color: burlywood;
+    font-size: 1.2rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+/* clamp(minimum, preferred, maximum) */
+.name-title {
+    font-size: clamp(3rem, 5vw, 5rem); 
+    color: white;
+    line-height: 1.1;
+    margin-bottom: 0.5rem;
+}
+
+.role-title {
+    font-size: clamp(1.5rem, 3vw, 2.5rem);
+    color: #a0a0a0;
+    margin-bottom: 1.5rem;
+}
+
+.hero-description {
+    font-size: 1.1rem;
+    color: #cccccc;
+    line-height: 1.6;
+    margin-bottom: 2.5rem;
+}
+
+/* Call to Action Buttons */
+.hero-actions {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.btn {
+    padding: 0.8rem 1.8rem;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.primary-btn {
+    background: burlywood;
+    color: black;
+    border: 2px solid burlywood;
+}
+
+.primary-btn:hover {
+    background: transparent;
+    color: burlywood;
+}
+
+.secondary-btn {
+    background: transparent;
+    color: white;
+    border: 2px solid #444;
+}
+
+.secondary-btn:hover {
+    border-color: burlywood;
+    color: burlywood;
+}
+
+/* Image Styling */
+.hero-image-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.profile-pic {
+    max-width: 100%;
+    width: 400px;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+    border: 1px solid #333;
+    transition: transform 0.3s ease;
+}
+
+.profile-pic:hover {
+    transform: translateY(-10px);
+    border-color: burlywood;
+}
