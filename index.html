@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#05070d">
+<meta name="description" content="Katlego Tsotetsi — Computer Science student building useful software across full-stack development, cloud, data science and AI.">
+<title>Katlego Tsotetsi | Developer Portfolio</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://unpkg.com/lucide@latest"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+html{scroll-behavior:smooth;scroll-padding-top:90px}body{margin:0;background:#05070d;font-family:Inter,ui-sans-serif,system-ui,sans-serif}::selection{background:#67e8f94d;color:white}
+.glass{border:1px solid #ffffff17;background:#ffffff0b;backdrop-filter:blur(20px);box-shadow:inset 0 1px #ffffff0a;transition:border-color .3s,background .3s,transform .3s}.glass:hover{border-color:#67e8f940;background:#ffffff10}
+.reveal{opacity:0;transform:translateY(18px);transition:opacity .65s,transform .65s}.reveal.visible{opacity:1;transform:translateY(0)}
+.float{animation:float 7s ease-in-out infinite}@keyframes float{50%{transform:translateY(-10px)}}@keyframes glow{50%{opacity:.8}}
+.eyebrow{color:#67e8f9;font-size:.7rem;font-weight:800;letter-spacing:.22em;text-transform:uppercase;margin-bottom:.75rem}.section-title{color:white;font-size:clamp(1.9rem,4vw,2.5rem);font-weight:800;letter-spacing:-.035em}.section-desc{margin-top:1rem;line-height:1.75;color:#94a3b8}.section-heading{max-width:42rem;margin-bottom:2.5rem}
+.iconbox{display:grid;place-items:center;flex-shrink:0;width:2.75rem;height:2.75rem;border-radius:1rem;border:1px solid #ffffff1a;background:#ffffff0a;color:#a5f3fc}
+.tags{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:1.25rem}.tags span{padding:.4rem .75rem;border:1px solid #ffffff1a;border-radius:9999px;background:#ffffff0b;color:#cbd5e1;font-size:.75rem;font-weight:500}
+.bullet{display:flex;gap:.7rem;line-height:1.65;color:#cbd5e1;font-size:.875rem}.bullet:before{content:"";width:6px;height:6px;flex-shrink:0;margin-top:.55rem;border-radius:9999px;background:#67e8f9}
+.badge{display:inline-flex;width:max-content;align-items:center;gap:.4rem;border:1px solid #fcd34d33;border-radius:9999px;background:#fcd34d12;padding:.3rem .75rem;color:#fde68a;font-size:.75rem;font-weight:700}
+.navlink{color:#94a3b8;font-size:.875rem;transition:color .2s}.navlink:hover{color:white}.social{display:grid;place-items:center;width:2.25rem;height:2.25rem;border-radius:9999px;border:1px solid #ffffff1a;background:#ffffff08;color:#cbd5e1}.social:hover{border-color:#ffffff40;color:white}
+.mobile-link{padding:.75rem;border-radius:.75rem;font-size:.875rem;color:#cbd5e1}.mobile-link:hover{background:#ffffff0d;color:white}
+.status{display:inline-flex;margin-top:.75rem;border-radius:9999px;padding:.25rem .6rem;font-size:10px;font-weight:800}.progress{background:#38bdf81a;color:#7dd3fc}.done{background:#34d3991a;color:#6ee7b7}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation-duration:.01ms!important;transition-duration:.01ms!important}.reveal{opacity:1;transform:none}}
+</style>
+</head>
+<body class="overflow-x-hidden text-slate-300 antialiased">
+<div aria-hidden="true" class="pointer-events-none fixed inset-0 -z-10 overflow-hidden">
+<div class="absolute left-1/2 top-[-300px] h-[650px] w-[900px] -translate-x-1/2 rounded-full bg-cyan-500/[0.08] blur-[130px]"></div>
+<div class="absolute right-[-180px] top-[25%] h-[500px] w-[500px] rounded-full bg-blue-600/[0.07] blur-[130px]"></div>
+<div class="absolute bottom-[-250px] left-[-180px] h-[500px] w-[500px] rounded-full bg-violet-600/[0.06] blur-[130px]"></div>
+<div class="absolute inset-0 opacity-[0.035]" style="background-image:linear-gradient(#ffffff 1px,transparent 1px),linear-gradient(90deg,#ffffff 1px,transparent 1px);background-size:64px 64px"></div></div>
+<header class="sticky top-0 z-50 border-b border-white/[0.08] bg-[#05070d]/80 backdrop-blur-2xl">
+<nav class="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 sm:px-8" aria-label="Main navigation">
+<a href="#top" class="flex items-center gap-3"><span class="grid h-9 w-9 place-items-center rounded-xl border border-cyan-300/20 bg-cyan-300/10 text-sm font-black text-cyan-200">KT</span><span class="hidden font-semibold tracking-tight text-white sm:block">Katlego Tsotetsi</span></a>
+<div class="hidden items-center gap-7 md:flex"><a href="#about" class="navlink">About</a><a href="#skills" class="navlink">Skills</a><a href="#projects" class="navlink">Projects</a><a href="#experience" class="navlink">Experience</a><a href="#education" class="navlink">Education</a></div>
+<div class="flex items-center gap-3">
+  <!-- GitHub -->
+  <a
+    href="https://github.com/Katlego204"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="GitHub"
+    class="social"
+  >
+    <svg
+      viewBox="0 0 24 24"
+      width="22"
+      height="22"
+      fill="currentColor"
+      aria-hidden="true"
+    >
+      <path d="M12 .9a11.1 11.1 0 0 0-3.51 21.63c.56.1.76-.24.76-.54v-2.1c-3.1.67-3.76-1.32-3.76-1.32-.5-1.28-1.24-1.62-1.24-1.62-1.02-.7.08-.69.08-.69 1.12.08 1.71 1.15 1.71 1.15 1 .1.98 2.03 3.04 1.54.1-.72.4-1.21.7-1.5-2.47-.28-5.07-1.24-5.07-5.5 0-1.22.44-2.22 1.15-3-.12-.28-.5-1.43.11-2.98 0 0 .94-.3 3.05 1.14a10.6 10.6 0 0 1 5.55 0c2.11-1.44 3.05-1.14 3.05-1.14.61 1.55.23 2.7.11 2.98.72.78 1.15 1.78 1.15 3.01 0 4.27-2.61 5.21-5.1 5.49.4.35.75 1.03.75 2.08v3.08c0 .3.2.65.77.54A11.1 11.1 0 0 0 12 .9Z"/>
+    </svg>
+  </a>
+
+  <!-- LinkedIn -->
+  <a
+    href="https://linkedin.com/in/katlego-tsotetsi204"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="LinkedIn"
+    class="social"
+  >
+    <svg
+      viewBox="0 0 24 24"
+      width="22"
+      height="22"
+      fill="currentColor"
+      aria-hidden="true"
+    >
+      <path d="M20.45 2H3.55C2.69 2 2 2.68 2 3.52v16.96c0 .84.69 1.52 1.55 1.52h16.9c.86 0 1.55-.68 1.55-1.52V3.52c0-.84-.69-1.52-1.55-1.52ZM8.08 18.45H5.12V9h2.96v9.45ZM6.6 7.71a1.72 1.72 0 1 1 .02-3.44 1.72 1.72 0 0 1-.02 3.44Zm12.02 10.74h-2.96v-4.6c0-1.1-.02-2.52-1.54-2.52-1.54 0-1.78 1.2-1.78 2.44v4.68H9.38V9h2.84v1.29h.04c.4-.74 1.36-1.52 2.8-1.52 3 0 3.56 1.97 3.56 4.53v5.15Z"/>
+    </svg>
+  </a>
+
+  <a
+    href="resume.pdf"
+    download
+    class="ml-2 rounded-full bg-white px-4 py-2 text-xs font-bold text-slate-950 hover:bg-cyan-100"
+  >
+    Resume
+  </a>
+</div>
+<button id="menu-toggle" class="grid h-10 w-10 place-items-center rounded-xl border border-white/10 bg-white/[0.04] text-white md:hidden" aria-label="Open navigation menu" aria-expanded="false"><i data-lucide="menu"></i></button></nav>
+<div id="mobile-menu" class="hidden border-t border-white/[0.08] px-5 py-4 md:hidden"><div class="flex flex-col gap-1"><a href="#about" class="mobile-link">About</a><a href="#skills" class="mobile-link">Skills</a><a href="#projects" class="mobile-link">Projects</a><a href="#experience" class="mobile-link">Experience</a><a href="#education" class="mobile-link">Education</a><a href="resume.pdf" download class="mt-2 rounded-xl bg-white px-4 py-3 text-center text-sm font-bold text-slate-950">Download Resume</a></div></div>
+</header>
+<main id="top">
+<section id="about" class="mx-auto max-w-7xl px-5 pb-20 pt-20 sm:px-8 sm:pb-28 sm:pt-28">
+<div class="grid items-center gap-14 lg:grid-cols-[1.25fr_.75fr]"><div class="reveal">
+<div class="mb-7 inline-flex items-center gap-2 rounded-full border border-cyan-300/15 bg-cyan-300/[0.06] px-3.5 py-2 text-xs font-semibold text-cyan-200"><span class="h-2 w-2 rounded-full bg-cyan-300"></span>Computer Science Student · Stellenbosch University</div>
+<h1 class="max-w-4xl text-5xl font-black leading-[0.98] tracking-[-0.04em] text-white sm:text-7xl lg:text-[5.5rem]">I build things<span class="block bg-gradient-to-r from-cyan-200 via-sky-300 to-violet-300 bg-clip-text text-transparent">worth using.</span></h1>
+<p class="mt-7 max-w-2xl text-base leading-8 text-slate-400 sm:text-lg">I'm Katlego, a Computer Science student and aspiring intern working across full-stack development, cloud infrastructure, data science and AI. I like turning messy problems into practical software.</p>
+<div class="mt-9 flex flex-wrap gap-3"><a href="#projects" class="inline-flex items-center gap-2 rounded-full bg-cyan-300 px-6 py-3.5 text-sm font-extrabold text-slate-950 transition hover:-translate-y-0.5 hover:bg-cyan-200">Explore my work <i data-lucide="arrow-up-right" class="h-4 w-4"></i></a><a href="resume.pdf" download class="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/[0.04] px-6 py-3.5 text-sm font-semibold text-white hover:bg-white/[0.08]"><i data-lucide="download" class="h-4 w-4"></i> Download CV</a></div>
+<div class="mt-10 flex flex-wrap gap-x-6 gap-y-3 text-sm text-slate-500"><span class="inline-flex items-center gap-2"><i data-lucide="map-pin" class="h-4 w-4 text-cyan-300"></i>Western Cape, South Africa</span><a href="https://github.com/Katlego204" target="_blank" rel="noreferrer" class="inline-flex items-center gap-2 hover:text-white"><i data-lucide="github" class="h-4 w-4"></i>GitHub</a><a href="https://linkedin.com/in/katlego-tsotetsi204" target="_blank" rel="noreferrer" class="inline-flex items-center gap-2 hover:text-white"><i data-lucide="linkedin" class="h-4 w-4"></i>LinkedIn</a></div></div>
+<div class="relative mx-auto w-full max-w-md lg:ml-auto reveal"><div class="absolute -inset-8 rounded-[3rem] bg-cyan-400/[0.06] blur-3xl" style="animation:glow 5s ease-in-out infinite"></div><div class="glass float relative overflow-hidden rounded-3xl p-5">
+<div class="mb-5 flex items-center justify-between border-b border-white/[0.08] pb-4"><div class="flex gap-1.5"><span class="h-2.5 w-2.5 rounded-full bg-white/20"></span><span class="h-2.5 w-2.5 rounded-full bg-white/20"></span><span class="h-2.5 w-2.5 rounded-full bg-white/20"></span></div><span class="font-mono text-[10px] text-slate-600">katlego.dev</span></div>
+<div class="rounded-2xl border border-white/[0.07] bg-black/20 p-5 font-mono text-xs leading-7"><p class="text-slate-600">01</p><p><span class="text-violet-300">const</span> <span class="text-cyan-200">katlego</span> = {</p><p class="pl-5"><span class="text-slate-500">focus:</span> <span class="text-emerald-300">"building"</span>,</p><p class="pl-5"><span class="text-slate-500">stack:</span> <span class="text-emerald-300">"cloud + code"</span>,</p><p class="pl-5"><span class="text-slate-500">mindset:</span> <span class="text-emerald-300">"learn fast"</span>,</p><p class="pl-5"><span class="text-slate-500">status:</span> <span class="text-emerald-300">"shipping"</span></p><p>};</p></div>
+<div class="mt-4 grid grid-cols-2 gap-3"><div class="rounded-2xl border border-white/[0.07] bg-white/[0.025] p-4"><p class="text-2xl font-black text-white">4+</p><p class="mt-1 text-[11px] text-slate-500">Solo Projects Built</p></div><div class="rounded-2xl border border-white/[0.07] bg-white/[0.025] p-4"><p class="text-2xl font-black text-white">Live</p><p class="mt-1 text-[11px] text-slate-500">Full Stack Application</p></div></div></div></div></div>
+<div class="mt-20 grid grid-cols-2 overflow-hidden rounded-3xl border border-white/[0.08] bg-white/[0.025] sm:grid-cols-4"><div class="p-5 text-center sm:p-7"><p class="text-2xl font-black text-white sm:text-3xl">200+</p><p class="mt-1 text-xs text-slate-500">Issues escalated</p></div><div class="border-l border-white/[0.08] p-5 text-center sm:p-7"><p class="text-2xl font-black text-white sm:text-3xl">30%</p><p class="mt-1 text-xs text-slate-500">Faster response</p></div><div class="border-l border-white/[0.08] p-5 text-center sm:p-7"><p class="text-2xl font-black text-white sm:text-3xl">2nd</p><p class="mt-1 text-xs text-slate-500">SUDS placement</p></div><div class="border-l border-white/[0.08] p-5 text-center sm:p-7"><p class="text-2xl font-black text-white sm:text-3xl">3rd</p><p class="mt-1 text-xs text-slate-500">LaunchLab placement</p></div></div></section>
+
+<section id="skills" class="mx-auto max-w-7xl px-5 py-20 sm:px-8 sm:py-10"><div class="section-heading reveal"><p class="eyebrow">Toolkit</p><h2 class="section-title">Technologies I work with</h2><p class="section-desc">A practical mix of software engineering, cloud, data and design tools.</p></div><div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+<article class="glass reveal rounded-3xl p-6"><div class="iconbox"><i data-lucide="code-2"></i></div><h3 class="mt-6 text-lg font-bold text-white">Languages</h3><div class="tags"><span>Python</span><span>JavaScript</span><span>SQL</span><span>Java</span><span>HTML/CSS</span></div></article>
+<article class="glass reveal rounded-3xl p-6"><div class="iconbox"><i data-lucide="cloud"></i></div><h3 class="mt-6 text-lg font-bold text-white">Backend & Cloud</h3><div class="tags"><span>Node.js</span><span>Express</span><span>PostgreSQL</span><span>AWS S3</span><span>AWS IAM</span><span>REST APIs</span><span>Vercel</span><span>Render</span></div></article>
+<article class="glass reveal rounded-3xl p-6"><div class="iconbox"><i data-lucide="chart-no-axes-combined"></i></div><h3 class="mt-6 text-lg font-bold text-white">Data & ML</h3><div class="tags"><span>Pandas</span><span>NumPy</span><span>Scikit-learn</span><span>XGBoost</span><span>QGIS</span><span>ArcGIS Pro</span></div></article>
+<article class="glass reveal rounded-3xl p-6"><div class="iconbox"><i data-lucide="palette"></i></div><h3 class="mt-6 text-lg font-bold text-white">Tools & Design</h3><div class="tags"><span>Git</span><span>GitHub</span><span>Figma</span><span>UI/UX Wireframing</span></div></article></div></section>
+
+<section id="projects" class="mx-auto max-w-7xl px-5 py-20 sm:px-8 sm:py-10"><div class="section-heading reveal"><p class="eyebrow">Selected work</p><h2 class="section-title">Projects that show how I think</h2><p class="section-desc">From full-stack systems to fast-paced AI and data projects.</p></div><div class="grid gap-4 lg:grid-cols-2">
+<article class="glass reveal relative overflow-hidden rounded-3xl lg:row-span-2"><div class="absolute right-0 top-0 h-40 w-40 rounded-full bg-cyan-300/[0.06] blur-3xl"></div><div class="relative flex h-full flex-col p-6 sm:p-8"><div class="flex items-start justify-between gap-4"><div><p class="eyebrow">FULL-STACK · 2025–2026</p><h3 class="mt-3 text-2xl font-black tracking-tight text-white sm:text-3xl">CampusCorner.co.za</h3></div><div class="iconbox"><i data-lucide="shopping-bag"></i></div></div><span class="badge mt-5">✦ Featured project</span><p class="mt-5 max-w-xl leading-7 text-slate-400">A full-stack student marketplace built with Node.js, PostgreSQL and native JavaScript. Includes secure authentication, role-based moderation and an AWS-backed image pipeline.</p><div class="mt-6 space-y-2"><p class="bullet">In-memory image processing to WebP</p><p class="bullet">Secure AWS S3 image storage</p><p class="bullet">Cryptographic authentication flow</p><p class="bullet">Role-based admin dashboard</p></div><div class="mt-auto pt-8"><div class="tags"><span>Node.js</span><span>PostgreSQL</span><span>AWS S3</span><span>JavaScript</span></div><a href="https://campuscorner.co.za" target="_blank" rel="noreferrer" class="mt-6 inline-flex items-center gap-2 text-sm font-bold text-white hover:text-cyan-200">Visit project <i data-lucide="external-link" class="h-4 w-4"></i></a></div></div></article>
+<article class="glass reveal rounded-3xl p-6 sm:p-8"><p class="eyebrow">SUDS HACKATHON · 2025</p><h3 class="mt-3 text-2xl font-black text-white">AI-Powered EdTech</h3><span class="badge mt-5">🏆 2nd Place</span><p class="mt-5 leading-7 text-slate-400">A gamified learning platform that turns uploaded lecture slides into step-by-step, Duolingo-style conceptual breakdowns, with peer study features.</p><div class="mt-5 space-y-2"><p class="bullet">Built in under 48 hours</p><p class="bullet">AI slide parsing and peer learning</p></div><div class="tags"><span>AI</span><span>Web App</span><span>EdTech</span></div></article>
+<article class="glass reveal rounded-3xl p-6 sm:p-8"><p class="eyebrow">SPATIALEDGE HACKATHON · 2024</p><h3 class="mt-3 text-2xl font-black text-white">Cloud Cost Anomaly Detector</h3><span class="badge mt-5">48-Hour Sprint</span><p class="mt-5 leading-7 text-slate-400">A Python and Pandas system designed to identify and visualize statistical outliers in cloud billing data.</p><div class="mt-5 space-y-2"><p class="bullet">Statistical analysis</p><p class="bullet">Data visualization and team collaboration</p></div><div class="tags"><span>Python</span><span>Pandas</span><span>Data Science</span></div></article></div></section>
+
+<section id="experience" class="mx-auto max-w-7xl px-5 py-20 sm:px-8 sm:py-10"><div class="section-heading reveal"><p class="eyebrow">Experience</p><h2 class="section-title">Where I've put the skills to work</h2><p class="section-desc">Hands-on experience across quantitative analysis, machine learning and live technical operations.</p></div><div class="grid gap-4 border-l border-white/10 pl-6 sm:pl-8">
+<article class="glass reveal rounded-3xl p-6 sm:p-7"><p class="eyebrow">JAN 2026 – FEB 2026</p><h3 class="mt-2 text-xl font-black text-white">QYF Quant Intern</h3><p class="mt-1 font-medium text-slate-400">Quantify Your Future · Remote</p><ul class="mt-6 space-y-3"><li class="bullet">Engineered predictive flood-risk forecasting models for Absa using environmental data, dam levels and climate-lag features.</li><li class="bullet">Developed transaction fraud-detection models in Python, evaluating logistic-regression coefficients and precision/recall metrics.</li><li class="bullet">Implemented an XGBoost classifier for digital-banking customer engagement, using feature importance and ROC AUC to inform targeting.</li></ul></article>
+<article class="glass reveal rounded-3xl p-6 sm:p-7"><p class="eyebrow">SEP 2024 – JUN 2025</p><h3 class="mt-2 text-xl font-black text-white">Live Broadcast Monitoring Operator</h3><p class="mt-1 font-medium text-slate-400">Pixellot · Part-time, assigned to SuperSport</p><ul class="mt-6 space-y-3"><li class="bullet">Monitored live sports broadcasts for stream quality and uptime.</li><li class="bullet">Detected and escalated 200+ real-time issues including audio desync, buffering and signal loss.</li><li class="bullet">Reduced average response time by 30% while collaborating with technical teams and onsite operators.</li></ul></article></div></section>
+
+<section id="education" class="mx-auto max-w-7xl px-5 py-20 sm:px-8 sm:py-10"><div class="grid gap-14 lg:grid-cols-2"><div><div class="section-heading reveal"><p class="eyebrow">Education</p><h2 class="section-title">Learning by building</h2></div><div class="space-y-3">
+<article class="glass reveal flex items-center justify-between gap-4 rounded-3xl p-5"><div class="flex items-start gap-4"><div class="iconbox"><i data-lucide="graduation-cap"></i></div><div><h3 class="font-bold text-white">BSc Computer Science</h3><p class="mt-1 text-sm text-slate-500">Stellenbosch University</p></div></div><span class="shrink-0 text-xs text-slate-600">2024–2026*</span></article>
+<article class="glass reveal flex items-center justify-between gap-4 rounded-3xl p-5"><div class="flex items-start gap-4"><div class="iconbox"><i data-lucide="book-open"></i></div><div><h3 class="font-bold text-white">Introduction to Computer Science</h3><p class="mt-1 text-sm text-slate-500">CS50</p></div></div><span class="shrink-0 text-xs text-slate-600">2023</span></article>
+<article class="glass reveal flex items-center justify-between gap-4 rounded-3xl p-5"><div class="flex items-start gap-4"><div class="iconbox"><i data-lucide="school"></i></div><div><h3 class="font-bold text-white">National Senior Certificate</h3><p class="mt-1 text-sm text-slate-500">Poelano Secondary School</p></div></div><span class="shrink-0 text-xs text-slate-600">Completed</span></article></div><p class="mt-4 text-xs text-slate-600">*Dates reflect the supplied resume. Update your expected graduation date if it has changed.</p></div>
+<div><div class="section-heading reveal"><p class="eyebrow">Leadership</p><h2 class="section-title">Beyond the code</h2></div><div class="space-y-3">
+<article class="glass reveal rounded-3xl p-5"><h3 class="font-bold text-white">Digital Design & Visuals Officer</h3><p class="mt-1 text-sm text-cyan-200/80">Matiepreneur Committee · Stellenbosch University · 2026–Present</p><p class="mt-3 text-sm leading-6 text-slate-500">Supports entrepreneurship events, outreach and sponsors, and creates marketing materials using Canva and Figma.</p></article>
+<article class="glass reveal rounded-3xl p-5"><h3 class="font-bold text-white">Residence Choir Member</h3><p class="mt-1 text-sm text-cyan-200/80">Kraaie · Stellenbosch University · 2024</p><p class="mt-3 text-sm leading-6 text-slate-500">Participated in university choir competitions, campus events and weekly performances.</p></article>
+<article class="glass reveal rounded-3xl p-5"><h3 class="font-bold text-white">Chess Committee Leader</h3><p class="mt-1 text-sm text-cyan-200/80">Event Coordinator & Team Leader · 2020–2022</p><p class="mt-3 text-sm leading-6 text-slate-500">Led a team of 50+ students, organized events and taught chess through weekly lessons for almost two years.</p></article></div></div></div></section>
+
+<section id="certifications" class="mx-auto max-w-7xl px-5 py-20 sm:px-8 sm:py-10"><div class="section-heading reveal"><p class="eyebrow">Credentials</p><h2 class="section-title">Certifications & learning</h2><p class="section-desc">A growing foundation across cloud, cybersecurity, programming and networking.</p></div><div class="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+<article class="glass reveal rounded-3xl p-5"><div class="flex gap-4"><div class="iconbox"><i data-lucide="cloud"></i></div><div><h3 class="font-bold leading-5 text-white">AWS Certified Cloud Practitioner</h3><p class="mt-1 text-xs text-slate-500">Amazon Web Services</p><span class="status progress">In Progress</span></div></div></article>
+<article class="glass reveal rounded-3xl p-5"><div class="flex gap-4"><div class="iconbox"><i data-lucide="shield-check"></i></div><div><h3 class="font-bold leading-5 text-white">FCF – Certified Cybersecurity Fundamentals</h3><p class="mt-1 text-xs text-slate-500">Fortinet</p><span class="status done">Certified</span></div></div></article>
+<article class="glass reveal rounded-3xl p-5"><div class="flex gap-4"><div class="iconbox"><i data-lucide="shield"></i></div><div><h3 class="font-bold leading-5 text-white">Cisco Security Operations Center</h3><p class="mt-1 text-xs text-slate-500">Coursera</p><span class="status done">Completed</span></div></div></article>
+<article class="glass reveal rounded-3xl p-5"><div class="flex gap-4"><div class="iconbox"><i data-lucide="terminal"></i></div><div><h3 class="font-bold leading-5 text-white">Microsoft Python Programming Fundamentals</h3><p class="mt-1 text-xs text-slate-500">Coursera</p><span class="status done">Completed</span></div></div></article>
+<article class="glass reveal rounded-3xl p-5"><div class="flex gap-4"><div class="iconbox"><i data-lucide="network"></i></div><div><h3 class="font-bold leading-5 text-white">Introduction to Network</h3><p class="mt-1 text-xs text-slate-500">NVIDIA · Coursera</p><span class="status done">Completed</span></div></div></article>
+<article class="glass reveal rounded-3xl p-5"><div class="flex gap-4"><div class="iconbox"><i data-lucide="award"></i></div><div><h3 class="font-bold leading-5 text-white">QYF Alumni Certificate</h3><p class="mt-1 text-xs text-slate-500">SAGEA</p><span class="status done">Completed</span></div></div></article></div></section>
+
+<section class="mx-auto max-w-7xl px-5 pb-20 pt-10 sm:px-8 sm:pb-28">
+    <div class="glass reveal relative overflow-hidden rounded-[2rem] bg-gradient-to-br from-cyan-300/[0.08] via-white/[0.035] to-violet-400/[0.07] p-8 sm:p-12"><div class="absolute -right-20 -top-20 h-64 w-64 rounded-full bg-cyan-300/[0.08] blur-3xl"></div><div class="relative max-w-2xl"><p class="eyebrow">Let's connect</p><h2 class="mt-3 text-3xl font-black tracking-tight text-white sm:text-4xl">Have a problem worth building?</h2><p class="mt-4 leading-7 text-slate-400">I'm interested in opportunities where I can combine software, cloud, data and curiosity to build useful things.</p><div class="mt-7 flex flex-wrap gap-3">
+<a
+  href="https://linkedin.com/in/katlego-tsotetsi204"
+  target="_blank"
+  rel="noopener noreferrer"
+  class="inline-flex items-center gap-2 rounded-full bg-white px-5 py-3 text-sm font-bold text-slate-950 hover:bg-cyan-100"
+>
+  <svg
+    viewBox="0 0 24 24"
+    width="16"
+    height="16"
+    fill="currentColor"
+    aria-hidden="true"
+    class="shrink-0"
+  >
+    <path d="M20.45 2H3.55C2.69 2 2 2.68 2 3.52v16.96c0 .84.69 1.52 1.55 1.52h16.9c.86 0 1.55-.68 1.55-1.52V3.52c0-.84-.69-1.52-1.55-1.52ZM8.08 18.45H5.12V9h2.96v9.45ZM6.6 7.71a1.72 1.72 0 1 1 .02-3.44 1.72 1.72 0 0 1-.02 3.44Zm12.02 10.74h-2.96v-4.6c0-1.1-.02-2.52-1.54-2.52-1.54 0-1.78 1.2-1.78 2.44v4.68H9.38V9h2.84v1.29h.04c.4-.74 1.36-1.52 2.8-1.52 3 0 3.56 1.97 3.56 4.53v5.15Z"/>
+  </svg>
+  Connect on LinkedIn
+</a>
+<a
+  href="https://github.com/Katlego204"
+  target="_blank"
+  rel="noopener noreferrer"
+  class="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/[0.05] px-5 py-3 text-sm font-semibold text-white hover:bg-white/[0.1]"
+>
+  <svg
+    viewBox="0 0 24 24"
+    width="16"
+    height="16"
+    fill="currentColor"
+    aria-hidden="true"
+    class="shrink-0"
+  >
+    <path d="M12 .9a11.1 11.1 0 0 0-3.51 21.63c.56.1.76-.24.76-.54v-2.1c-3.1.67-3.76-1.32-3.76-1.32-.5-1.28-1.24-1.62-1.24-1.62-1.02-.7.08-.69.08-.69 1.12.08 1.71 1.15 1.71 1.15 1 .1.98 2.03 3.04 1.54.1-.72.4-1.21.7-1.5-2.47-.28-5.07-1.24-5.07-5.5 0-1.22.44-2.22 1.15-3-.12-.28-.5-1.43.11-2.98 0 0 .94-.3 3.05 1.14a10.6 10.6 0 0 1 5.55 0c2.11-1.44 3.05-1.14 3.05-1.14.61 1.55.23 2.7.11 2.98.72.78 1.15 1.78 1.15 3.01 0 4.27-2.61 5.21-5.1 5.49.4.35.75 1.03.75 2.08v3.08c0 .3.2.65.77.54A11.1 11.1 0 0 0 12 .9Z"/>
+  </svg>
+  View GitHub
+</a>
+</div></div></div></section>
+</main>
+<footer class="border-t border-white/[0.08]"><div class="mx-auto flex max-w-7xl flex-col justify-between gap-4 px-5 py-8 text-sm text-slate-600 sm:flex-row sm:px-8"><p>© <span id="year"></span> Katlego Tsotetsi</p><p>Built with HTML · Tailwind CSS · Lucide</p></div></footer>
+<script>
+const toggle=document.getElementById('menu-toggle'), menu=document.getElementById('mobile-menu');
+toggle.addEventListener('click',()=>{const open=toggle.getAttribute('aria-expanded')==='true';toggle.setAttribute('aria-expanded',String(!open));toggle.setAttribute('aria-label',open?'Open navigation menu':'Close navigation menu');menu.classList.toggle('hidden',open);toggle.innerHTML=open?'<i data-lucide="menu"></i>':'<i data-lucide="x"></i>';lucide.createIcons()});
+menu.querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener('click',()=>{menu.classList.add('hidden');toggle.setAttribute('aria-expanded','false');toggle.innerHTML='<i data-lucide="menu"></i>';lucide.createIcons()}));
+const items=document.querySelectorAll('.reveal');
+if('IntersectionObserver'in window&&!window.matchMedia('(prefers-reduced-motion: reduce)').matches){const observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');observer.unobserve(e.target)}}),{threshold:.12});items.forEach(x=>observer.observe(x))}else items.forEach(x=>x.classList.add('visible'));
+document.getElementById('year').textContent=new Date().getFullYear();lucide.createIcons();
+</script>
+</body></html>
